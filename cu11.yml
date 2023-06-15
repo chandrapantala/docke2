@@ -1,0 +1,13 @@
+---
+version: '3.8'
+services:
+  mydb:
+   image: postgress
+   environment:
+     POSTGRESS_PASSWORD: ch
+     POSTGRESS_USER: myuser
+     POSTGRESS_DB: mydb
+  myadminer:
+    image: adminer
+    ports:
+      - 8888:8080

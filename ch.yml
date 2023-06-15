@@ -1,0 +1,13 @@
+---
+version: '3.8'
+services:
+  mydb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: chandu1
+      POSTGRES_USER: chandu
+      POSTGRES_DB: mydb
+  myadmin:
+    image: adminer
+    ports:
+       - 8181:8080

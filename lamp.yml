@@ -1,0 +1,19 @@
+---
+version: '3.8'
+services:
+  mydb:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ch
+  apache:
+    image: httpd
+    ports:
+      - 9909:80
+    links:
+      - mydb:selenium
+  php:
+    image: php:7.2-apache
+    links:
+      - mydb:mysql
+      - apache:httpd
+...
