@@ -19,4 +19,4 @@ services:
 ...
 
 #installation of mysql and php links its called lamp
----> docker compose -f lamp.yml up
+---> docker compose -f lamp.yml up -d
