@@ -11,3 +11,6 @@ services:
     image: adminer
     ports:
       - 8888:8080
+
+#docker compose used to insatll postgerss with env
+---> docker compose -f cu11.yml up -d 
