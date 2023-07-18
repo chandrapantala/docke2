@@ -12,3 +12,6 @@ services:
     links:
       - mydb:mysql
 ...
+#used to dockeer compose insatll myasql&wordpress and its both are link with links
+--->docker compose -f docker-compose.yml up
+---> docker compose -f docker-compose.yml dow(delete the compose file)
