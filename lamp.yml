@@ -17,3 +17,6 @@ services:
       - mydb:mysql
       - apache:httpd
 ...
+
+#installation of mysql and php links its called lamp
+---> docker compose -f lamp.yml up
