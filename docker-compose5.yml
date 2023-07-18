@@ -21,4 +21,4 @@ volume:
 ...
 
 #create volumes in path of in saves data then the paths are in docker hub
-----> docker compose -f docker-compose5.yml up
+----> docker compose -f docker-compose5.yml up -d
