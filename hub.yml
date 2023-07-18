@@ -21,3 +21,6 @@ services:
       - hub:selenium
     container_name: fire
 ...
+
+#insatll links 3containers selinum hub/chrome/firefox
+---> docker compose -f hub.yml up
